@@ -1,0 +1,82 @@
+﻿@model BikeGround.Models.Messages
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Messages);
+}
+<div ng-controller="MessagesController" class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-user"></i> @BikeGround.Models.Resources.Global.Messages
+        <div class="pull-right">
+            <button type="button" class="btn btn-default btn-xs">
+                <i class="fa fa-refresh" ng-click="init()"></i>
+            </button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <form id="MessagesForm" name="MessagesForm" ng-submit="MessagesFormValidate(MessagesForm.$valid)" novalidate>
+            <div class="form-horizontal">
+                <hr />
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.From, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.From.$invalid && !MessagesForm.From.$pristine }">
+                        @(Html.Editor<Messages, long>(x => x.From, t))
+                        @(Html.Required<Messages, long>(x => x.From, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.To, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.To.$invalid && !MessagesForm.To.$pristine }">
+                        @(Html.Editor<Messages, long>(x => x.To, t))
+                        @(Html.Required<Messages, long>(x => x.To, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.Message.$invalid && !MessagesForm.Message.$pristine }">
+                        @(Html.Editor<Messages, string>(x => x.Message, t))
+                        @(Html.Required<Messages, string>(x => x.Message, t))
+                        @(Html.StringLength<Messages, string>(x => x.Message, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MessagesVersionID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.MessagesVersionID.$invalid && !MessagesForm.MessagesVersionID.$pristine }">
+                        @(Html.Editor<Messages, string>(x => x.MessagesVersionID, t))
+                        @(Html.Required<Messages, string>(x => x.MessagesVersionID, t))
+                        @(Html.StringLength<Messages, string>(x => x.MessagesVersionID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.DateAdded.$invalid && !MessagesForm.DateAdded.$pristine }">
+                        @(Html.Editor<Messages, DateTime>(x => x.DateAdded, t))
+                        @(Html.Required<Messages, DateTime>(x => x.DateAdded, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : MessagesForm.Active.$invalid && !MessagesForm.Active.$pristine }">
+                        @(Html.Editor<Messages, bool>(x => x.Active, t))
+                        @(Html.Required<Messages, bool>(x => x.Active, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+                <ul>
+                    <li ng-repeat="(key, errors) in MessagesForm.$error track by $index">
+                        <strong>{{ key }}</strong> errors
+                        <ul>
+                            <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>

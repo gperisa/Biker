@@ -1,0 +1,104 @@
+﻿<div> <!-- ng-controller="mainController" -->
+
+    <style>
+        html {
+            background: url(../../Assets/Images/Login.jpeg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+    <br />
+    <br />
+    <div class="row">
+        @*<div class="col-md-3 col-md-3 col-lg-3"></div>*@
+        <div class="col-md-3 col-md-3 col-lg-3 well">
+
+            <form name="LoginForm" ng-submit="PostFormValidate(LoginForm.$valid, Login)" novalidate>
+                <fieldset>
+
+                    <legend>Please log in</legend>
+                    <!-- EMAIL -->
+                    <div class="form-group" ng-class="{ 'has-error' : LoginForm.email.$invalid && !LoginForm.email.$pristine }">
+                        <label>Email</label>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">@@</span>
+                            <input type="email" name="email" class="form-control" required ng-model="loginUser.email" />
+                        </div>
+                        <p ng-show="LoginForm.email.$invalid && !LoginForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="form-group" ng-class="{ 'has-error' : LoginForm.pass.$invalid && !LoginForm.pass.$pristine }">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" name="pass" class="form-control" required ng-model="loginUser.pass" ng-minlength="3" ng-maxlength="24" />
+                        </div>
+                        <p ng-show="LoginForm.pass.$error.minlength" class="help-block">Password is too short.</p>
+                        <p ng-show="LoginForm.pass.$error.maxlength" class="help-block">Password is too long.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary pull-right">Login</button>
+                </fieldset>
+
+            </form>
+            <!--
+            <form name="RegistrationForm" ng-submit="submitFormReg(RegistrationForm.$valid)" novalidate>
+                <fieldset>
+
+                    <legend>Registration</legend>
+
+                    <div class="form-group" ng-class="{ 'has-error' : RegistrationForm.email.$invalid && !RegistrationForm.email.$pristine }">
+                        <label>Email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">@@</span>
+                            <input type="email" name="email" class="form-control" required ng-model="User.email" />
+                        </div>
+                        <p ng-show="RegistrationForm.email.$invalid && !RegistrationForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error' : RegistrationForm.pass.$invalid && !RegistrationForm.pass.$pristine }">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" name="pass" class="form-control" required ng-model="User.pass" ng-minlength="3" ng-maxlength="24" />
+                        </div>
+                        <p ng-show="RegistrationForm.pass.$error.minlength" class="help-block">Password is too short.</p>
+                        <p ng-show="RegistrationForm.pass.$error.maxlength" class="help-block">Password is too long.</p>
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error' : RegistrationForm.passConfirm.$invalid && !RegistrationForm.passConfirm.$pristine }">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" name="passConfirm" class="form-control" required ng-model="User.passConfirm" ng-minlength="3" ng-maxlength="24" />
+                        </div>
+                        <p ng-show="RegistrationForm.passConfirm.$error.minlength" class="help-block">Password is too short.</p>
+                        <p ng-show="RegistrationForm.passConfirm.$error.maxlength" class="help-block">Password is too long.</p>
+                    </div>
+
+                    <div class="checkbox-custom checkbox-default">
+                        <input id="AgreeTerms" name="agreeterms" type="checkbox">
+                        <label for="AgreeTerms">I agree with <a href="#">terms of use</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary pull-right">Register</button>
+
+                    <div style="clear: both;"></div>
+                    <br />
+                    <div class="text-center">
+                        <a class="btn btn-default">Connect with <i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-default">Connect with <i class="fa fa-twitter"></i></a>
+                    </div>
+                </fieldset>
+
+            </form>
+            -->
+        </div>
+
+        <div style="clear: both; background: red; color: white; padding: 5px;">{{ loginUser }}</div>
+    </div>
+</div>

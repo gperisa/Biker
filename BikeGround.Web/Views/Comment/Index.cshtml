@@ -1,0 +1,80 @@
+﻿@model BikeGround.Models.Comment
+@{
+    ViewBag.UserID = "Index";
+
+    Type t = typeof(Comment);
+}
+<div ng-controller="CommentController">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="dataWraper">
+                <div class="dataList">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-11 col-xs-11">
+                        <button class="dataToggleComm btn btn-default" ng-click="setComment(0)"><span class="glyphicon glyphicon-pencil"></span> Write new Comment</button>
+                        <button class="btn btn-default" ng-click="refresh()"><span class="glyphicon glyphicon-refresh"></span> Refresh list</button>
+                    </div>
+                    <div ng-repeat="o in Comments">
+                        <div class="row">
+                            <div class="col-md-1 col-xs-1">
+                                <span class='dataToggleComm btn btn-default' ng-click="setComment(o.ID)"><span class="glyphicon glyphicon-pencil"></span></span>
+                            </div>
+                            <div class="col-md-11 col-xs-11">
+                                <blockquote>
+                                    <p>{{ o.CommentText }}</p>
+                                    <small>Maškare by <cite title="Source Title">Komletinci</cite></small>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataEdit">
+                    <span class='dataToggle btn btn-default'><span class="glyphicon glyphicon-arrow-left"></span></span>
+                    <hr />
+                    <form id="CommentForm" name="CommentForm" ng-submit="CommentFormValidate(CommentForm.$valid, Comment)" novalidate>
+
+                        @*@Html.AntiForgeryToken()*@
+
+                        @Html.HiddenFor(x => x.ID)
+
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CommentText, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.CommentText.$invalid && !TripForm.CommentText.$pristine }">
+                                    @(Html.Editor<Comment, string>(x => x.CommentText, t))
+                                    @(Html.Required<Comment, string>(x => x.CommentText, t))
+                                    @(Html.StringLength<Comment, string>(x => x.CommentText, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @(Html.CheckEditor<Comment, bool>(x => x.Active, t))
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li ng-repeat="(key, errors) in CommentForm.$error track by $index">
+                                    <strong>{{ key }}</strong> errors
+                                    <ul>
+                                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,128 @@
+﻿@model BikeGround.Models.Post
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Post);
+}
+
+<div ng-controller="PostController" class="row">
+
+    <div class="col-lg-12 col-xs-12">
+        <div class="panel panel-default ng-scope">
+            <div class="panel-heading">
+                <button class="dataToggleNew btn btn-default" ng-click="setPost(0)"><span class="glyphicon glyphicon-pencil"></span> @BikeGround.Models.Resources.Global.NewPost</button>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-default">
+                        <i class="fa fa-refresh" ng-click="refresh()"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body dataWraper">
+                <div class="dataList">
+                    <div ng-repeat="o in Posts">
+                        <h1>
+                            <span class="btn-group">
+                                <button class="btn btn-default dataToggle" ng-click="setPost(o.ID)"><span class="glyphicon glyphicon-pencil"></span></button>
+                            </span>
+                            {{ o.Title }}
+                        </h1>
+                        <hr />
+                        <p ng-bind-html="o.Description"></p>
+                        <hr />
+                        <p>Broj komentara</p>
+                        @*<ngcomment idx="{{ o.ID }}"></ngcomment>*@
+                    </div>
+                </div>
+                <div class="dataEdit">
+                    <span class='dataToggle btn btn-default'><span class="glyphicon glyphicon-arrow-left"></span></span>
+                    <hr />
+                    <form id="PostForm" name="PostForm" ng-submit="PostFormValidate(PostForm.$valid, Post)" novalidate>
+
+                        @Html.HiddenFor(x => x.ID)
+
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TripID, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.TripID.$invalid && !PostForm.TripID.$pristine }">
+                                    @(Html.EditorDropDown<Post, long>(x => x.TripID, t, "o.ID as o.Title for o in Global.Trips"))
+                                    @(Html.Required<Post, long>(x => x.TripID, t))
+                                    @(Html.StringLength<Post, long>(x => x.TripID, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.Title.$invalid && !PostForm.Title.$pristine }">
+                                    @(Html.Editor<Post, string>(x => x.Title, t))
+                                    @(Html.Required<Post, string>(x => x.Title, t))
+                                    @(Html.StringLength<Post, string>(x => x.Title, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.Description.$invalid && !PostForm.Description.$pristine }">
+                                    @(Html.Editor<Post, string>(x => x.Description, t))
+                                    @(Html.Required<Post, string>(x => x.Description, t))
+                                    @(Html.StringLength<Post, string>(x => x.Description, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.DateAdded.$invalid && !PostForm.DateAdded.$pristine }">
+                                    @(Html.DateEditor<Post, DateTime>(x => x.DateAdded, t))
+                                    @(Html.Required<Post, DateTime>(x => x.DateAdded, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.ModifiedDate, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.ModifiedDate.$invalid && !PostForm.ModifiedDate.$pristine }">
+                                    @(Html.DateEditor<Post, DateTime>(x => x.ModifiedDate, t))
+                                    @(Html.Required<Post, DateTime>(x => x.ModifiedDate, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MapRoute, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.MapRoute.$invalid && !PostForm.MapRoute.$pristine }">
+                                    @(Html.Editor<Post, string>(x => x.MapRoute, t))
+                                    @(Html.Required<Post, string>(x => x.MapRoute, t))
+                                    @(Html.StringLength<Post, string>(x => x.MapRoute, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LastLocation, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : PostForm.LastLocation.$invalid && !PostForm.LastLocation.$pristine }">
+                                    @(Html.Editor<Post, string>(x => x.LastLocation, t))
+                                    @(Html.StringLength<Post, string>(x => x.LastLocation, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9">
+                                        @(Html.CheckEditor<Post, bool>(x => x.Active, t))
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li ng-repeat="(key, errors) in PostForm.$error track by $index">
+                                    <strong>{{ key }}</strong> errors
+                                    <ul>
+                                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

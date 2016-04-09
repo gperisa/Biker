@@ -1,0 +1,5 @@
+﻿Formatiranje grešaka:
+
+{0} - Name
+{1} - Maximum Length
+{2} - Minimum Length

@@ -1,0 +1,48 @@
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.dll.config
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.pdb
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Newtonsoft.Json.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Owin.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.pdb
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\bin\Debug\Newtonsoft.Json.xml
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.dll
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.pdb
+E:\DEVELOPMENT\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.dll.config
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\AspNet.Identity.Dapper.pdb
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Newtonsoft.Json.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Owin.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.pdb
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Dapper.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\bin\Debug\Newtonsoft.Json.xml
+E:\Code Library\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.dll
+E:\Code Library\Biker\AspNet.Identity.Dapper\obj\Debug\AspNet.Identity.Dapper.pdb

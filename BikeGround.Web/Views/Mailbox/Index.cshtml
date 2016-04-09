@@ -1,0 +1,107 @@
+﻿@model BikeGround.Models.Mailbox
+@{
+    ViewBag.Subject = "Index";
+
+    Type t = typeof(Mailbox);
+}
+
+<div ng-controller="MailboxController" class="well">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="dataWraper">
+                <div class="dataList">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-11 col-xs-11">
+                        <button class="dataToggle btn btn-default" ng-click="setMailbox(0)"><span class="glyphicon glyphicon-pencil"></span> Compose new</button>
+                        <button class="btn btn-default" ng-click="getSentMail()"><span class="glyphicon glyphicon-refresh"></span> Sent</button>
+                        <button class="btn btn-default" ng-click="refresh()"><span class="glyphicon glyphicon-refresh"></span> Refresh</button>
+                    </div>
+                    <div ng-repeat="o in Mailboxes">
+                        <div class="row dataToggle" ng-click="setMailbox(o.ID)">
+                            From: {{o.Sender}}, To: {{o.Receiver}} <p class="col-md-11 col-xs-11">
+                                {{ o.Subject }}&nbsp;{{o.Body}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataEdit">
+                    <span class='dataToggle btn btn-default'><span class="glyphicon glyphicon-arrow-left"></span></span>
+                    <hr />
+                    <form id="MailboxForm" name="MailboxForm" ng-submit="MailboxFormValidate(MailboxForm.$valid, Mailbox)" novalidate>
+
+                        @*@Html.AntiForgeryToken()*@
+                        @Html.HiddenFor(x => x.ID)
+
+                        <div class="form-horizontal">
+
+                            @*<div class="form-group">
+                                @Html.LabelFor(model => model.Sender, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12" ng-class="{ 'has-error' : MailboxForm.Sender.$invalid && !MailboxForm.Sender.$pristine }">
+                                    @(Html.Editor<Mailbox, string>(x => x.Sender, t))
+                                    @(Html.Required<Mailbox, string>(x => x.Sender, t))
+                                    @(Html.StringLength<Mailbox, string>(x => x.Sender, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Receiver, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12" ng-class="{ 'has-error' : MailboxForm.Receiver.$invalid && !MailboxForm.Receiver.$pristine }">
+                                    @(Html.Editor<Mailbox, string>(x => x.Receiver, t))
+                                    @(Html.Required<Mailbox, string>(x => x.Receiver, t))
+                                    @(Html.StringLength<Mailbox, string>(x => x.Receiver, t))
+                                </div>
+                            </div>*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12" ng-class="{ 'has-error' : MailboxForm.Subject.$invalid && !MailboxForm.Subject.$pristine }">
+                                    @(Html.Editor<Mailbox, string>(x => x.Subject, t))
+                                    @(Html.Required<Mailbox, string>(x => x.Subject, t))
+                                    @(Html.StringLength<Mailbox, string>(x => x.Subject, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12" ng-class="{ 'has-error' : MailboxForm.Body.$invalid && !MailboxForm.Body.$pristine }">
+                                    @(Html.Editor<Mailbox, string>(x => x.Body, t))
+                                    @(Html.Required<Mailbox, string>(x => x.Body, t))
+                                    @(Html.StringLength<Mailbox, string>(x => x.Body, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12" ng-class="{ 'has-error' : MailboxForm.DateAdded.$invalid && !MailboxForm.DateAdded.$pristine }">
+                                    @(Html.DateEditor<Mailbox, DateTime>(x => x.DateAdded, t))
+                                    @(Html.Required<Mailbox, DateTime>(x => x.DateAdded, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-12">
+                                    <div class="checkbox">
+                                        @(Html.CheckEditor<Mailbox, bool>(x => x.Active, t))
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-12">
+                                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li ng-repeat="(key, errors) in MailboxForm.$error track by $index">
+                                    <strong>{{ key }}</strong> errors
+                                    <ul>
+                                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

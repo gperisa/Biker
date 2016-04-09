@@ -1,0 +1,132 @@
+﻿<br />
+@{
+    if (!Request.IsAuthenticated)
+    {
+        <p>Niste autentificirani!</p>
+    }
+    else
+    {
+        <div class="row" ng-controller="SettingsController">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1>Settings</h1>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == '' }" ng-click="Start('')">Profile</button>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == 'BlogDirective' }" ng-click="Start('BlogDirective')">Blog</button>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == 'TripDirective' }" ng-click="Start('TripDirective')">Trips</button>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == 'PostDirective' }" ng-click="Start('PostDirective')">Posts</button>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == 'WallDirective' }" ng-click="Start('WallDirective')">Wall</button>
+                <button class="btn btn-default" ng-class="{ 'btn-primary' : aktivan == 'MailboxDirective' }" ng-click="Start('MailboxDirective')">Mail</button>
+                <hr />
+            </div>
+            <p></p>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+
+                <div class="animate-switch-container" ng-switch on="aktivan">
+
+                    <div class="animate-switch" ng-switch-default>
+                        <ngprofile></ngprofile>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="BlogDirective">
+                        <ngblog></ngblog>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="TripDirective">
+                        <ngtrip></ngtrip>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="PostDirective">
+                        <ngpost></ngpost>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="WallDirective">
+                        <ngwall></ngwall>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="MailboxDirective">
+                        <ngmailbox></ngmailbox>
+                    </div>
+
+                    <div class="animate-switch" ng-switch-when="CommentDirective">
+                        <ngcomment></ngcomment>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Reklame -->
+            <div class="col-sm-12 col-md-3 col-lg-3 white">
+                <div class="thumbnail">
+                    <img alt="KTM Lycan" class="img-responsive" src=""
+                         width="300" height="300" />
+                    <div class="caption">
+                        <h3>
+                            Thumbnail label
+                        </h3>
+                        <p>
+                            Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised
+                            as the most popular gun in American crime. Do you believe that shit? It actually
+                            says that in the little book that comes with it: the most popular gun in American
+                            crime. Like they're actually proud of that shit.
+                        </p>
+                        <p>
+                            Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!
+                            In a comic, you know how you can tell who the arch-villain's going to be?
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                                                                            role="button">Button</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img alt="KTM Lycan" class="img-responsive" src=""
+                         width="300" height="300" />
+                    <div class="caption">
+                        <h3>
+                            Thumbnail label
+                        </h3>
+                        <p>
+                            Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised
+                            as the most popular gun in American crime. Do you believe that shit? It actually
+                            says that in the little book that comes with it: the most popular gun in American
+                            crime. Like they're actually proud of that shit.
+                        </p>
+                        <p>
+                            Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!
+                            In a comic, you know how you can tell who the arch-villain's going to be?
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                                                                            role="button">Button</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img alt="KTM Lycan" class="img-responsive" src=""
+                         width="300" height="300" />
+                    <div class="caption">
+                        <h3>
+                            Thumbnail label
+                        </h3>
+                        <p>
+                            Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised
+                            as the most popular gun in American crime. Do you believe that shit? It actually
+                            says that in the little book that comes with it: the most popular gun in American
+                            crime. Like they're actually proud of that shit.
+                        </p>
+                        <p>
+                            Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!
+                            In a comic, you know how you can tell who the arch-villain's going to be?
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                                                                            role="button">Button</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- / Reklame -->
+        </div>
+    }
+}

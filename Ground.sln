@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGround.Web", "BikeGround.Web\BikeGround.Web.csproj", "{680725B8-CE61-4D66-8514-A71CD5D826B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGround.API", "BikeGround.API\BikeGround.API.csproj", "{47866BF1-6CA4-4859-8171-4FF0CC7086B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGround.Models", "BikeGround.Models\BikeGround.Models.csproj", "{6B401860-A235-40A9-91DA-C3AFF0EC932F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGround.DataLayer", "BikeGround.DataLayer\BikeGround.DataLayer.csproj", "{2B75ACCD-E4C7-410C-AA91-4EADAFE98370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContexGenerator", "ContexGenerator\ContexGenerator.csproj", "{F5C08ACF-45BC-4B1F-BFC2-EE891288B89F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.Identity.Dapper", "AspNet.Identity.Dapper\AspNet.Identity.Dapper.csproj", "{37ECC44B-C00C-4781-ACA5-7F02C1A092E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroOrm.Pocos.SqlGenerator", "MicroOrm.Pocos.SqlGenerator\MicroOrm.Pocos.SqlGenerator.csproj", "{37EFD853-CBFF-4B7F-9568-615747CA7237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTester", "NUnitTester\NUnitTester.csproj", "{0DC3D9A4-1F9B-45AD-8B1C-9F4251272928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeGround.Interfaces", "BikeGround.Interfaces\BikeGround.Interfaces.csproj", "{3719ED4A-6B9E-4D1A-A615-B9932CF8F4DE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://borger.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BikeGround.Models\\BikeGround.Models.csproj
+		SccProjectName1 = BikeGround.Models
+		SccLocalPath1 = BikeGround.Models
+		SccProjectUniqueName2 = BikeGround.Web\\BikeGround.Web.csproj
+		SccProjectName2 = BikeGround.Web
+		SccLocalPath2 = BikeGround.Web
+		SccProjectUniqueName3 = BikeGround.API\\BikeGround.API.csproj
+		SccProjectName3 = BikeGround.API
+		SccLocalPath3 = BikeGround.API
+		SccProjectUniqueName4 = BikeGround.DataLayer\\BikeGround.DataLayer.csproj
+		SccProjectName4 = BikeGround.DataLayer
+		SccLocalPath4 = BikeGround.DataLayer
+		SccProjectUniqueName5 = ContexGenerator\\ContexGenerator.csproj
+		SccProjectName5 = ContexGenerator
+		SccLocalPath5 = ContexGenerator
+		SccProjectUniqueName6 = AspNet.Identity.Dapper\\AspNet.Identity.Dapper.csproj
+		SccProjectName6 = AspNet.Identity.Dapper
+		SccLocalPath6 = AspNet.Identity.Dapper
+		SccProjectUniqueName7 = MicroOrm.Pocos.SqlGenerator\\MicroOrm.Pocos.SqlGenerator.csproj
+		SccProjectName7 = MicroOrm.Pocos.SqlGenerator
+		SccLocalPath7 = MicroOrm.Pocos.SqlGenerator
+		SccProjectUniqueName8 = NUnitTester\\NUnitTester.csproj
+		SccProjectName8 = NUnitTester
+		SccLocalPath8 = NUnitTester
+		SccProjectUniqueName9 = BikeGround.Interfaces\\BikeGround.Interfaces.csproj
+		SccProjectName9 = BikeGround.Interfaces
+		SccLocalPath9 = BikeGround.Interfaces
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{680725B8-CE61-4D66-8514-A71CD5D826B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680725B8-CE61-4D66-8514-A71CD5D826B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680725B8-CE61-4D66-8514-A71CD5D826B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680725B8-CE61-4D66-8514-A71CD5D826B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47866BF1-6CA4-4859-8171-4FF0CC7086B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47866BF1-6CA4-4859-8171-4FF0CC7086B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47866BF1-6CA4-4859-8171-4FF0CC7086B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47866BF1-6CA4-4859-8171-4FF0CC7086B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B401860-A235-40A9-91DA-C3AFF0EC932F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B401860-A235-40A9-91DA-C3AFF0EC932F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B401860-A235-40A9-91DA-C3AFF0EC932F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B401860-A235-40A9-91DA-C3AFF0EC932F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B75ACCD-E4C7-410C-AA91-4EADAFE98370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B75ACCD-E4C7-410C-AA91-4EADAFE98370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B75ACCD-E4C7-410C-AA91-4EADAFE98370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B75ACCD-E4C7-410C-AA91-4EADAFE98370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C08ACF-45BC-4B1F-BFC2-EE891288B89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C08ACF-45BC-4B1F-BFC2-EE891288B89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C08ACF-45BC-4B1F-BFC2-EE891288B89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C08ACF-45BC-4B1F-BFC2-EE891288B89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37ECC44B-C00C-4781-ACA5-7F02C1A092E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37ECC44B-C00C-4781-ACA5-7F02C1A092E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37ECC44B-C00C-4781-ACA5-7F02C1A092E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37ECC44B-C00C-4781-ACA5-7F02C1A092E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EFD853-CBFF-4B7F-9568-615747CA7237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EFD853-CBFF-4B7F-9568-615747CA7237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EFD853-CBFF-4B7F-9568-615747CA7237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EFD853-CBFF-4B7F-9568-615747CA7237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC3D9A4-1F9B-45AD-8B1C-9F4251272928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC3D9A4-1F9B-45AD-8B1C-9F4251272928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC3D9A4-1F9B-45AD-8B1C-9F4251272928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC3D9A4-1F9B-45AD-8B1C-9F4251272928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3719ED4A-6B9E-4D1A-A615-B9932CF8F4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3719ED4A-6B9E-4D1A-A615-B9932CF8F4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3719ED4A-6B9E-4D1A-A615-B9932CF8F4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3719ED4A-6B9E-4D1A-A615-B9932CF8F4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

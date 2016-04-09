@@ -1,0 +1,177 @@
+﻿@model BikeGround.Models.Connect
+@{
+    if (!Request.IsAuthenticated)
+    {
+        <p>Niste autentificirani!</p>
+    }
+    else
+    {
+        Type t = typeof(Connect);
+
+        <div ng-controller="ConnectController">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-search"></i> Advanced search
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <form id="ConnectForm" name="ConnectForm" ng-submit="ConnectFormValidate(ConnectForm.$valid, Connect)" novalidate>
+                        <div class="form-horizontal">
+                            @*<div class="col-lg-4">*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.FirstName.$invalid && !ConnectForm.FirstName.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.FirstName, t))
+                                    @(Html.Required<Connect, string>(x => x.FirstName, t))
+                                    @(Html.StringLength<Connect, string>(x => x.FirstName, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.LastName.$invalid && !ConnectForm.LastName.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.LastName, t))
+                                    @(Html.Required<Connect, string>(x => x.LastName, t))
+                                    @(Html.StringLength<Connect, string>(x => x.LastName, t))
+                                </div>
+                            </div>
+                            @*<div class="form-group">
+                                    @Html.LabelFor(model => model.About, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                    <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.About.$invalid && !ConnectForm.About.$pristine }">
+                                        @(Html.Editor<Connect, string>(x => x.About, t))
+                                        @(Html.Required<Connect, string>(x => x.About, t))
+                                        @(Html.StringLength<Connect, string>(x => x.About, t))
+                                    </div>
+                                </div>*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CountryID, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.CountryID.$invalid && !ConnectForm.CountryID.$pristine }">
+                                    @(Html.EditorDropDown<Connect, long>(x => x.CountryID, t, "o.ID as o.Title for o in Global.Countries"))
+                                    @(Html.Required<Connect, long>(x => x.CountryID, t))
+                                    @(Html.StringLength<Connect, long>(x => x.CountryID, t))
+                                </div>
+                            </div>
+                            @*</div>
+                                <div class="col-lg-4">*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.City.$invalid && !ConnectForm.City.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.City, t))
+                                    @(Html.Required<Connect, string>(x => x.City, t))
+                                    @(Html.StringLength<Connect, string>(x => x.City, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Accommodation, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9">
+                                    @(Html.CheckEditor<Connect, bool>(x => x.Accommodation, t))
+                                </div>
+                            </div>
+                            @*<div class="form-group">
+                                    @Html.LabelFor(model => model.AccDescription, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                    <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.AccDescription.$invalid && !ConnectForm.AccDescription.$pristine }">
+                                        @(Html.Editor<Connect, string>(x => x.AccDescription, t))
+                                        @(Html.StringLength<Connect, string>(x => x.AccDescription, t))
+                                    </div>
+                                </div>*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.Name.$invalid && !ConnectForm.Name.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.Name, t))
+                                    @(Html.Required<Connect, string>(x => x.Name, t))
+                                    @(Html.StringLength<Connect, string>(x => x.Name, t))
+                                </div>
+                            </div>
+                            @*</div>
+                                <div class="col-lg-4">*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Caption, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.Caption.$invalid && !ConnectForm.Caption.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.Caption, t))
+                                    @(Html.Required<Connect, string>(x => x.Caption, t))
+                                    @(Html.StringLength<Connect, string>(x => x.Caption, t))
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.BlogName, htmlAttributes: new { @class = "control-label col-lg-3" })
+                                <div class="col-lg-9" ng-class="{ 'has-error' : ConnectForm.ConnectName.$invalid && !ConnectForm.ConnectName.$pristine }">
+                                    @(Html.Editor<Connect, string>(x => x.BlogName, t))
+                                    @(Html.Required<Connect, string>(x => x.BlogName, t))
+                                    @(Html.StringLength<Connect, string>(x => x.BlogName, t))
+                                </div>
+                            </div>
+
+                            <hr />
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="Name">Page size</label>
+                                <div class="col-lg-9">
+                                    <select class="form-control btn-xs">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-lg-10">
+                                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li ng-repeat="(key, errors) in ConnectForm.$error track by $index">
+                                    <strong>{{ key }}</strong> errors
+                                    <ul>
+                                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            {{ Connect }}
+
+                        </div>
+                    </form>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+
+            <div class="row">
+                <div ng-repeat="o in Connections" class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-user"></i> {{ o.FirstName }} {{ o.LastName }}
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <i class="fa fa-envelope-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <p>{{ o.About }}</p>
+                            <ul>
+                                <li>Country: {{ o.CountryID }}</li>
+                                <li>City: {{ o.City }}</li>
+                                <li>Accommodation: {{ o.Accommodation }}</li>
+                                <li>AccDescription: {{ o.AccDescription }}</li>
+                                <li>Blog: {{ o.Name }}</li>
+                                <li>Caption: {{ o.Caption }}</li>
+                                <li>Blog name: <a href="http://localhost:4722/Blogs/{{ o.BlogName }}" target="_blank">{{ o.BlogName }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-default btn-sm btn-block"><i class="fa fa-repeat"></i> Load more results</button>
+                    <br />
+                </div>
+            </div>
+        </div>
+    }
+}

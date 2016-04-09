@@ -1,0 +1,115 @@
+﻿@model BikeGround.Models.Trip
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Trip);
+}
+<div ng-controller="TripController" class="row">
+
+    <div class="col-md-12 col-xs-12">
+        <div class="panel panel-default ng-scope">
+            <div class="panel-heading">
+                <button class="dataToggleNew btn btn-default" ng-click="setTrip(0)"><span class="glyphicon glyphicon-pencil"></span> @BikeGround.Models.Resources.Global.NewTrip</button>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-default">
+                        <i class="fa fa-refresh" ng-click="refresh()"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body dataWraper">
+                <div class="dataList">
+                    <div ng-repeat="o in Trips">
+                        <h1>
+                            <span class="btn-group">
+                                <button class="btn btn-default dataToggle" ng-click="setTrip(o.ID)"><span class="glyphicon glyphicon-pencil"></span></button>
+                            </span>
+                            {{ o.Title }}
+                        </h1>
+                        <hr />
+                        <p ng-bind="o.ShortDescription"></p>
+                        <p ng-bind="o.Distance"></p>
+                        <p ng-bind="o.StartDate"></p>
+                        <p ng-bind="o.EndDate"></p>
+                    </div>
+                </div>
+                <div class="dataEdit">
+                    <span class='dataToggle btn btn-default'><span class="glyphicon glyphicon-arrow-left"></span></span>
+                    <hr />
+                    <form id="TripForm" name="TripForm" ng-submit="TripFormValidate(TripForm.$valid, Trip)" novalidate>
+
+                        @*@Html.AntiForgeryToken()*@
+
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.Title.$invalid && !TripForm.Title.$pristine }">
+                                    @(Html.Editor<Trip, string>(x => x.Title, t))
+                                    @(Html.Required<Trip, string>(x => x.Title, t))
+                                    @(Html.StringLength<Trip, string>(x => x.Title, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.ShortDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.ShortDescription.$invalid && !TripForm.ShortDescription.$pristine }">
+                                    @(Html.Editor<Trip, string>(x => x.ShortDescription, t))
+                                    @(Html.Required<Trip, string>(x => x.ShortDescription, t))
+                                    @(Html.StringLength<Trip, string>(x => x.ShortDescription, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Distance, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.Distance.$invalid && !TripForm.Distance.$pristine }">
+                                    @(Html.NumericEditor<Trip, decimal>(x => x.Distance, t))
+                                    @(Html.Required<Trip, decimal>(x => x.Distance, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.StartDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.StartDate.$invalid && !TripForm.StartDate.$pristine }">
+                                    @(Html.DateEditor<Trip, DateTime>(x => x.StartDate, t))
+                                    @(Html.Required<Trip, DateTime>(x => x.StartDate, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.EndDate.$invalid && !TripForm.EndDate.$pristine }">
+                                    @(Html.DateEditor<Trip, DateTime>(x => x.EndDate, t))
+                                    @(Html.Required<Trip, DateTime>(x => x.EndDate, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10" ng-class="{ 'has-error' : TripForm.DateAdded.$invalid && !TripForm.DateAdded.$pristine }">
+                                    @(Html.DateEditor<Trip, DateTime>(x => x.DateAdded, t))
+                                    @(Html.Required<Trip, DateTime>(x => x.DateAdded, t))
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @(Html.CheckEditor<Trip, bool>(x => x.Active, t))
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li ng-repeat="(key, errors) in TripForm.$error track by $index">
+                                    <strong>{{ key }}</strong> errors
+                                    <ul>
+                                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

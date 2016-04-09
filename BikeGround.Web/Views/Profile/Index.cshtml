@@ -1,0 +1,150 @@
+﻿@model BikeGround.Models.Profile
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Profile);
+}
+
+<div ng-controller="ProfileController" class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-user"></i> @BikeGround.Models.Resources.Global.Profile
+        <div class="pull-right">
+            <button type="button" class="btn btn-default btn-xs">
+                <i class="fa fa-refresh" ng-click="init()"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+        <form id="ProfileForm" name="ProfileForm" ng-submit="ProfileFormValidate(ProfileForm.$valid, Profile)" novalidate>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.FirstName.$invalid && !ProfileForm.FirstName.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.FirstName, t))
+                        @(Html.Required<Profile, string>(x => x.FirstName, t))
+                        @(Html.StringLength<Profile, string>(x => x.FirstName, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.LastName.$invalid && !ProfileForm.LastName.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.LastName, t))
+                        @(Html.Required<Profile, string>(x => x.LastName, t))
+                        @(Html.StringLength<Profile, string>(x => x.LastName, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.SecundaryEMail, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.SecundaryEMail.$invalid && !ProfileForm.SecundaryEMail.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.SecundaryEMail, t))
+                        @(Html.Required<Profile, string>(x => x.SecundaryEMail, t))
+                        @(Html.StringLength<Profile, string>(x => x.SecundaryEMail, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.About, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.About.$invalid && !ProfileForm.About.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.About, t))
+                        @(Html.Required<Profile, string>(x => x.About, t))
+                        @(Html.StringLength<Profile, string>(x => x.About, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CountryID, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.CountryID.$invalid && !ProfileForm.CountryID.$pristine }">
+                        @(Html.EditorDropDown<Profile, long>(x => x.CountryID, t, "o.ID as o.Title for o in Global.Countries"))
+                        @(Html.Required<Profile, long>(x => x.CountryID, t))
+                        @(Html.StringLength<Profile, long>(x => x.CountryID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.City.$invalid && !ProfileForm.City.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.City, t))
+                        @(Html.Required<Profile, string>(x => x.City, t))
+                        @(Html.StringLength<Profile, string>(x => x.City, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Accommodation, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10">
+                        @(Html.CheckEditor<Profile, bool>(x => x.Accommodation, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AccDescription, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.AccDescription.$invalid && !ProfileForm.AccDescription.$pristine }">
+                        @(Html.Editor<Profile, string>(x => x.AccDescription, t))
+                        @(Html.StringLength<Profile, string>(x => x.AccDescription, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ChatActivity, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10">
+                        @(Html.CheckEditor<Profile, bool>(x => x.ChatActivity, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ProfileActivityID, htmlAttributes: new { @class = "control-label col-lg-2" })
+                    <div class="col-lg-10" ng-class="{ 'has-error' : ProfileForm.ProfileActivityID.$invalid && !ProfileForm.ProfileActivityID.$pristine }">
+                        @(Html.EditorDropDown<Profile, int>(x => x.ProfileActivityID, t, "o.ID as o.Title for o in Global.ProfileActivities"))
+                        @(Html.Required<Profile, int>(x => x.ProfileActivityID, t))
+                        @(Html.StringLength<Profile, int>(x => x.ProfileActivityID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-lg-10">
+                        @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                    </div>
+                </div>
+
+                <ul>
+                    <li ng-repeat="(key, errors) in ProfileForm.$error track by $index">
+                        <strong>{{ key }}</strong> errors
+                        <ul>
+                            <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </form>
+
+        <hr />
+
+        <div class="well">
+            <div style="background-color: orange; padding: 5px;">
+                <h1>Chat</h1>
+                <hr />
+                <input id="UsernameID" type="hidden" value="{{ IsUserName }}" readonly />
+
+                <div class="col-sm-6">
+                    <input id="ChatID" type="text" class="form-control" ng-model="chatmessage" />
+                    <br />
+                    <input id="SubmitID" type="button" value="Submit" class="btn btn-danger" ng-click="send(chatmessage, chatUser)" />
+                </div>
+
+                <div class="col-sm-6">
+                    <select id="GrupaID" class="form-control" ng-model="chatUser">
+                        <option value="all">All</option>
+                        <option value="prosinac.decembar@gmail.com">Petar</option>
+                        <option value="goran@goran.com">Goran</option>
+                        <option value="natasa@natasa.hr">Nataša</option>
+                        <option value="maja@maja.hr">Maja</option>
+                    </select>
+                    <br />
+                    <input id="SubscribeID" value="Subscribe" type="button" ng-click="subscribe(chatUser)" class="btn btn-info" />
+                    <input id="UnSubscribeID" value="Usubscribe" type="button" ng-click="usubscribe(chatUser)" class="btn btn-info" />
+                </div>
+
+                <div id="wraper" class="col-sm-12">
+                    <h2>Chat messages:</h2>
+                    <div class="panel panel-default"><div ng-repeat="o in ChatText" class="panel-body"><strong>{{ o.user }}</strong>: {{ o.text }}</div></div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.panel-body -->
+</div>
+

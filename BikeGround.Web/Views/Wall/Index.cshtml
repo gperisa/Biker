@@ -1,0 +1,27 @@
+﻿@model BikeGround.Models.Wall
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Wall);
+}
+<div ng-controller="WallController" class="well">
+    <form id="WallForm" name="WallForm" ng-submit="WallFormValidate(WallForm.$valid)" novalidate>
+        @*@Html.AntiForgeryToken()*@
+        @Html.HiddenFor(x => x.ID)
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                </div>
+            </div>
+            <ul>
+                <li ng-repeat="(key, errors) in WallForm.$error track by $index">
+                    <strong>{{ key }}</strong> errors
+                    <ul>
+                        <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

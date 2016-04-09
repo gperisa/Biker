@@ -1,0 +1,75 @@
+﻿@model BikeGround.Models.Blog
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Blog);
+}
+
+<div ng-controller="BlogController" class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-user"></i> @BikeGround.Models.Resources.Global.Blog
+        <div class="pull-right">
+            <button type="button" class="btn btn-default btn-xs">
+                <i class="fa fa-refresh" ng-click="init()"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+        <form id="BlogForm" name="BlogForm" ng-submit="BlogFormValidate(BlogForm.$valid, Blog)" novalidate>
+
+            @Html.HiddenFor(x => x.ID)
+
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : BlogForm.Name.$invalid && !BlogForm.Name.$pristine }">
+                        @(Html.Editor<Blog, string>(x => x.Name, t))
+                        @(Html.Required<Blog, string>(x => x.Name, t))
+                        @(Html.StringLength<Blog, string>(x => x.Name, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Caption, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : BlogForm.Caption.$invalid && !BlogForm.Caption.$pristine }">
+                        @(Html.Editor<Blog, string>(x => x.Caption, t))
+                        @(Html.Required<Blog, string>(x => x.Caption, t))
+                        @(Html.StringLength<Blog, string>(x => x.Caption, t))
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BlogName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : BlogForm.BlogName.$invalid && !BlogForm.BlogName.$pristine }">
+                        @(Html.Editor<Blog, string>(x => x.BlogName, t))
+                        @(Html.Required<Blog, string>(x => x.BlogName, t))
+                        @(Html.StringLength<Blog, string>(x => x.BlogName, t))
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @(Html.CheckEditor<Blog, bool>(x => x.Active, t))
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        @(Html.Submit(BikeGround.Models.Resources.Global.Submit))
+                    </div>
+                </div>
+
+                <ul>
+                    <li ng-repeat="(key, errors) in BlogForm.$error track by $index">
+                        <strong>{{ key }}</strong> errors
+                        <ul>
+                            <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>

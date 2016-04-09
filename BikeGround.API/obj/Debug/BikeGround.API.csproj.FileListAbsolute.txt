@@ -1,0 +1,230 @@
+E:\DEVELOPMENT\Biker\BikeGround.API\obj\Debug\BikeGround.API.csproj.App.config
+E:\DEVELOPMENT\Biker\BikeGround.API\obj\Debug\BikeGround.API.csprojResolveAssemblyReference.cache
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.API.dll.config
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.API.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.API.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\AspNet.Identity.Dapper.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.DataLayer.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.Interfaces.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.Models.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Dapper.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Core.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\MicroOrm.Pocos.SqlGenerator.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.WebApi.MessageHandlers.Compression.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Cors.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Host.HttpListener.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Hosting.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Google.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Web.Infrastructure.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Newtonsoft.Json.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Owin.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Extensions.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Formatting.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Primitives.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Cors.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Helpers.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.Cors.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.Owin.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.WebHost.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Mvc.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Razor.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.Deployment.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.Razor.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Validation.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\AspNet.Identity.Dapper.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.DataLayer.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.Interfaces.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\BikeGround.Models.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\MicroOrm.Pocos.SqlGenerator.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Dapper.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Dapper.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Core.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.Core.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Cors.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Host.HttpListener.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Hosting.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Google.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Newtonsoft.Json.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Extensions.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Formatting.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Net.Http.Primitives.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Helpers.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.Cors.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.Owin.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Http.WebHost.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Mvc.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.Razor.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.Deployment.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\System.Web.WebPages.Razor.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Validation.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\en-GB\BikeGround.Models.resources.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\obj\Debug\BikeGround.API.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\obj\Debug\BikeGround.API.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\log4net.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Zlib.Portable.dll
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.pdb
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\log4net.xml
+E:\DEVELOPMENT\Biker\BikeGround.API\bin\Zlib.Portable.xml
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.API.dll.config
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.API.dll
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.API.pdb
+E:\Code Library\Biker\BikeGround.API\bin\AspNet.Identity.Dapper.dll
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.DataLayer.dll
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.Interfaces.dll
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.Models.dll
+E:\Code Library\Biker\BikeGround.API\bin\Dapper.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Core.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.dll
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.dll
+E:\Code Library\Biker\BikeGround.API\bin\log4net.dll
+E:\Code Library\Biker\BikeGround.API\bin\MicroOrm.Pocos.SqlGenerator.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.WebApi.MessageHandlers.Compression.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Cors.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Host.HttpListener.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Hosting.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Google.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.dll
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Web.Infrastructure.dll
+E:\Code Library\Biker\BikeGround.API\bin\Newtonsoft.Json.dll
+E:\Code Library\Biker\BikeGround.API\bin\Owin.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Extensions.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Formatting.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Primitives.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Cors.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Helpers.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.Cors.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.Owin.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.WebHost.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Mvc.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Razor.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.Deployment.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.dll
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.Razor.dll
+E:\Code Library\Biker\BikeGround.API\bin\Validation.dll
+E:\Code Library\Biker\BikeGround.API\bin\Zlib.Portable.dll
+E:\Code Library\Biker\BikeGround.API\bin\AspNet.Identity.Dapper.pdb
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.DataLayer.pdb
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.Interfaces.pdb
+E:\Code Library\Biker\BikeGround.API\bin\BikeGround.Models.pdb
+E:\Code Library\Biker\BikeGround.API\bin\MicroOrm.Pocos.SqlGenerator.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Dapper.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Dapper.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Analytics.v3.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Auth.PlatformServices.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Core.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.Core.xml
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.pdb
+E:\Code Library\Biker\BikeGround.API\bin\Google.Apis.PlatformServices.xml
+E:\Code Library\Biker\BikeGround.API\bin\log4net.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Cors.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Host.HttpListener.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Hosting.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Google.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.xml
+E:\Code Library\Biker\BikeGround.API\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Code Library\Biker\BikeGround.API\bin\Newtonsoft.Json.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Extensions.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Formatting.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Net.Http.Primitives.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Helpers.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.Cors.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.Owin.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Http.WebHost.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Mvc.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.Razor.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.Deployment.xml
+E:\Code Library\Biker\BikeGround.API\bin\System.Web.WebPages.Razor.xml
+E:\Code Library\Biker\BikeGround.API\bin\Validation.xml
+E:\Code Library\Biker\BikeGround.API\bin\Zlib.Portable.xml
+E:\Code Library\Biker\BikeGround.API\bin\en-GB\BikeGround.Models.resources.dll
+E:\Code Library\Biker\BikeGround.API\obj\Debug\BikeGround.API.csproj.App.config
+E:\Code Library\Biker\BikeGround.API\obj\Debug\BikeGround.API.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\BikeGround.API\obj\Debug\BikeGround.API.dll
+E:\Code Library\Biker\BikeGround.API\obj\Debug\BikeGround.API.pdb

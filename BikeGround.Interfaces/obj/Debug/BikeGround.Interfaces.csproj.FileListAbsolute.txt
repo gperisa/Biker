@@ -1,0 +1,10 @@
+E:\DEVELOPMENT\Biker\BikeGround.Interfaces\bin\Debug\BikeGround.Interfaces.dll
+E:\DEVELOPMENT\Biker\BikeGround.Interfaces\bin\Debug\BikeGround.Interfaces.pdb
+E:\DEVELOPMENT\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.dll
+E:\DEVELOPMENT\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.pdb
+E:\DEVELOPMENT\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\BikeGround.Interfaces\bin\Debug\BikeGround.Interfaces.dll
+E:\Code Library\Biker\BikeGround.Interfaces\bin\Debug\BikeGround.Interfaces.pdb
+E:\Code Library\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.dll
+E:\Code Library\Biker\BikeGround.Interfaces\obj\Debug\BikeGround.Interfaces.pdb

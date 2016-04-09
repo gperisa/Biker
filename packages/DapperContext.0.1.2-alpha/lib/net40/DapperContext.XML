@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DapperContext</name>
+    </assembly>
+    <members>
+        <member name="T:Dapper.DbConnectionFactory">
+            <summary>
+            A DbConnectionFactory allows you to create <see cref="T:System.Data.IDbConnection"/> instances by configuring
+            a connection in the connectionstrings section inside a app/web.config file.
+            </summary>
+        </member>
+        <member name="M:Dapper.DbConnectionFactory.#ctor(System.String)">
+            <summary>
+            Creates a new DbConnectionFactory instance.
+            </summary>
+            <param name="connectionStringName">A key of one of the connectionstring settings inside the connectionstrings section of an app/web.config file.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="connectionStringName"/> is a null value.4</exception>
+            <exception cref="T:System.Configuration.ConfigurationErrorsException">Thrown if <paramref name="connectionStringName"/> is not found in any app/web.config file available to the application.</exception>
+        </member>
+        <member name="M:Dapper.DbConnectionFactory.Create">
+            <summary>
+            Creates a new instance of <see cref="T:System.Data.IDbConnection"/>.
+            </summary>
+            <exception cref="T:System.Configuration.ConfigurationErrorsException">Thrown if the connectionstring entry in the app/web.config file is missing information, contains errors or is missing entirely.</exception>
+            <returns></returns>
+        </member>
+        <member name="T:Dapper.DbContext">
+            <summary>
+            A database context class for Dapper (https://github.com/SamSaffron/dapper-dot-net), based on http://blog.gauffin.org/2013/01/ado-net-the-right-way/#.UpWLPMSkrd2
+            </summary>
+        </member>
+        <member name="M:Dapper.DbContext.#ctor(System.String)">
+            <summary>
+            <para>Default constructor.</para>
+            <para>Uses the <paramref name="connectionStringName"/> to instantiate a <see cref="T:Dapper.DbConnectionFactory"/>. This factory will be used to create connections to a database.</para>
+            </summary>
+            <param name="connectionStringName">The name of the connectionstring as defined in a app/web.config file's connectionstrings section.</param>
+        </member>
+        <member name="M:Dapper.DbContext.CreateOrReuseConnection">
+            <summary>
+            Ensures that a connection is ready for querying or creating transactions
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:Dapper.DbContext.CreateUnitOfWork(System.Data.IsolationLevel)">
+            <summary>
+            Creates a new <see cref="T:Dapper.UnitOfWork"/>.
+            </summary>
+            <param name="isolationLevel">The <see cref="T:System.Data.IsolationLevel"/> used for the transaction inside this unit of work. Default value: <see cref="F:System.Data.IsolationLevel.ReadCommitted"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DbContext.Query(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Return a list of dynamic objects, reader is closed after the call
+            </summary>
+        </member>
+        <member name="M:Dapper.DbContext.Dispose">
+            <summary>
+            Implements <see cref="M:System.IDisposable.Dispose"/>.
+            </summary>
+        </member>
+        <member name="T:Dapper.UnitOfWork">
+            <summary>
+            This class defines a unit of work, which encapsulates a set of operations that should 
+            be committed as a whole, or rolled back in case one of the statements inside the unit of work fails.
+            </summary>
+        </member>
+        <member name="M:Dapper.UnitOfWork.#ctor(System.Data.IDbTransaction,System.Action{Dapper.UnitOfWork})">
+            <summary>
+            Creates a new <see cref="T:Dapper.UnitOfWork"/> instance.
+            </summary>
+            <param name="transaction">The underlying <see cref="T:System.Data.IDbTransaction"/> object used to either commit or roll back the statements that are being performed inside this unit of work.</param>
+            <param name="onCommitOrRollback">An <see cref="T:System.Action`1"/> that will be executed when the unit of work is being committed or rolled back.</param>
+        </member>
+        <member name="M:Dapper.UnitOfWork.#ctor(System.Data.IDbTransaction,System.Action{Dapper.UnitOfWork},System.Action{Dapper.UnitOfWork})">
+            <summary>
+            Creates a new <see cref="T:Dapper.UnitOfWork"/> instance.
+            </summary>
+            <param name="transaction">The underlying <see cref="T:System.Data.IDbTransaction"/> object used to either commit or roll back the statements that are being performed inside this unit of work.</param>
+            <param name="onCommit">An <see cref="T:System.Action`1"/> that will be executed when the unit of work is being committed.</param>
+            <param name="onRollback">An <see cref="T:System.Action`1"/> that will be executed when the unit of work is being rolled back.</param>
+        </member>
+        <member name="M:Dapper.UnitOfWork.SaveChanges">
+            <summary>
+            SaveChanges will try and commit all statements that have been executed against the database inside this unit of work.
+            </summary>
+            <remarks>
+            If committing fails, the underlying <see cref="T:System.Data.IDbTransaction"/> will be rolled back instead.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException">Thrown if this unit of work has already been committed or rolled back.</exception>
+        </member>
+        <member name="M:Dapper.UnitOfWork.Dispose">
+            <summary>
+            Implements <see cref="M:System.IDisposable.Dispose"/>, and rolls back the statements executed inside this unit of work.
+            This makes it easier to use a unit of work instance inside a <c>using</c> statement (<c>Using</c> in VB.Net).
+            </summary>
+        </member>
+        <member name="P:Dapper.UnitOfWork.Transaction">
+            <summary>
+            Retrieves the underlying <see cref="T:System.Data.IDbTransaction"/> instance.
+            </summary>
+        </member>
+    </members>
+</doc>

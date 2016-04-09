@@ -1,0 +1,10 @@
+E:\DEVELOPMENT\Biker\MicroOrm.Pocos.SqlGenerator\bin\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\DEVELOPMENT\Biker\MicroOrm.Pocos.SqlGenerator\bin\Debug\MicroOrm.Pocos.SqlGenerator.pdb
+E:\DEVELOPMENT\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\DEVELOPMENT\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.pdb
+E:\DEVELOPMENT\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\MicroOrm.Pocos.SqlGenerator\bin\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\Code Library\Biker\MicroOrm.Pocos.SqlGenerator\bin\Debug\MicroOrm.Pocos.SqlGenerator.pdb
+E:\Code Library\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\Code Library\Biker\MicroOrm.Pocos.SqlGenerator\obj\Debug\MicroOrm.Pocos.SqlGenerator.pdb

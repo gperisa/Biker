@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="189391c77a38454e84afd45c0827db8a" Name="Diagram1">
+        <EntityTypeShape EntityType="BikeGroundModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.AspNetUsers" Width="1.5" PointX="3" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Blog" Width="1.5" PointX="5.25" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Clients" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Comment" Width="1.5" PointX="15" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.CommentActivity" Width="1.5" PointX="20.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Country" Width="1.5" PointX="15.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Equipment" Width="1.5" PointX="10.5" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.EquipmentCategory" Width="1.5" PointX="8.25" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.FavoriteRoute" Width="1.5" PointX="7.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Friend" Width="1.5" PointX="5.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Mailbox" Width="1.5" PointX="10.25" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.MailType" Width="1.5" PointX="8" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Post" Width="1.5" PointX="12.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.PostCountry" Width="1.5" PointX="18" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.PostUsers" Width="1.5" PointX="18" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Profile" Width="1.5" PointX="8.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.ProfileActivity" Width="1.5" PointX="6" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Rating" Width="1.5" PointX="8" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.RefreshTokens" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Route" Width="1.5" PointX="5.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.RouteRating" Width="1.5" PointX="10.5" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Trip" Width="1.5" PointX="7.5" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.TripBuget" Width="1.5" PointX="10.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.TripEquipment" Width="1.5" PointX="12.75" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.UserEquipment" Width="1.5" PointX="10.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeGroundModel.Wall" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="BikeGroundModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Blog_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Comment_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_CommentActivity_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_FavoriteRoute_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Friend_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Friend_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Mailbox_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Mailbox_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Post_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_PostUsers_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Profile_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Route_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_RouteRating_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Trip_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_TripBuget_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_TripEquipment_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_UserEquipment_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Trip_Blog" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Comment_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Comment_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_CommentActivity_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_CommentActivity_ProfileActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_PostCountry_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Equipment_EquipmentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_TripEquipment_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_UserEquipment_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_FavoriteRoute_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Friend_ProfileActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Mailbox_MailType" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Post_Trip" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_PostCountry_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_PostUsers_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_Profile_ProfileActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_RouteRating_Rating" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_UserEquipment_Rating" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_RouteRating_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_TripBuget_Trip" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.FK_TripEquipment_Trip" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeGroundModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

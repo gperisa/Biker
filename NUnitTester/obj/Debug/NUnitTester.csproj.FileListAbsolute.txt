@@ -1,0 +1,9 @@
+E:\DEVELOPMENT\Biker\NUnitTester\bin\Debug\NUnitTester.dll
+E:\DEVELOPMENT\Biker\NUnitTester\bin\Debug\NUnitTester.pdb
+E:\DEVELOPMENT\Biker\NUnitTester\obj\Debug\NUnitTester.dll
+E:\DEVELOPMENT\Biker\NUnitTester\obj\Debug\NUnitTester.pdb
+E:\Code Library\Biker\NUnitTester\bin\Debug\NUnitTester.dll
+E:\Code Library\Biker\NUnitTester\bin\Debug\NUnitTester.pdb
+E:\Code Library\Biker\NUnitTester\obj\Debug\NUnitTester.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\NUnitTester\obj\Debug\NUnitTester.dll
+E:\Code Library\Biker\NUnitTester\obj\Debug\NUnitTester.pdb

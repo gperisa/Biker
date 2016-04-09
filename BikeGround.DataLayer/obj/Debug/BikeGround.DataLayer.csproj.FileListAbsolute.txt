@@ -1,0 +1,38 @@
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.DataLayer.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.DataLayer.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Interfaces.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Models.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\Dapper.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\DapperExtensions.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\Newtonsoft.Json.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Interfaces.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Models.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\MicroOrm.Pocos.SqlGenerator.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\Dapper.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\Dapper.xml
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\DapperExtensions.pdb
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\Newtonsoft.Json.xml
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\bin\Debug\en-GB\BikeGround.Models.resources.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.csprojResolveAssemblyReference.cache
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.dll
+E:\DEVELOPMENT\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.DataLayer.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.DataLayer.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Interfaces.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Models.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\Dapper.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\DapperExtensions.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\MicroOrm.Pocos.SqlGenerator.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\Newtonsoft.Json.dll
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Interfaces.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\BikeGround.Models.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\MicroOrm.Pocos.SqlGenerator.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\Dapper.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\Dapper.xml
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\DapperExtensions.pdb
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\Newtonsoft.Json.xml
+E:\Code Library\Biker\BikeGround.DataLayer\bin\Debug\en-GB\BikeGround.Models.resources.dll
+E:\Code Library\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.csprojResolveAssemblyReference.cache
+E:\Code Library\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.dll
+E:\Code Library\Biker\BikeGround.DataLayer\obj\Debug\BikeGround.DataLayer.pdb

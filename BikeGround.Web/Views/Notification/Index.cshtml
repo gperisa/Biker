@@ -1,0 +1,96 @@
+﻿@model BikeGround.Models.Notification
+@{
+    ViewBag.Title = "Index";
+
+    Type t = typeof(Notification);
+}
+<div ng-controller="NotificationController" class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-user"></i> @BikeGround.Models.Resources.Global.Notification
+        <div class="pull-right">
+            <button type="button" class="btn btn-default btn-xs">
+                <i class="fa fa-refresh" ng-click="init()"></i>
+            </button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <form id="NotificationForm" name="NotificationForm" ng-submit="NotificationFormValidate(NotificationForm.$valid)" novalidate>
+            <div class="form-horizontal">
+                <hr />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ToUserID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.ToUserID.$invalid && !NotificationForm.ToUserID.$pristine }">
+                        @(Html.Editor<Notification, long>(x => x.ToUserID, t))
+                        @(Html.Required<Notification, long>(x => x.ToUserID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.Message.$invalid && !NotificationForm.Message.$pristine }">
+                        @(Html.Editor<Notification, string>(x => x.Message, t))
+                        @(Html.Required<Notification, string>(x => x.Message, t))
+                        @(Html.StringLength<Notification, string>(x => x.Message, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Navigation, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.Navigation.$invalid && !NotificationForm.Navigation.$pristine }">
+                        @(Html.Editor<Notification, string>(x => x.Navigation, t))
+                        @(Html.Required<Notification, string>(x => x.Navigation, t))
+                        @(Html.StringLength<Notification, string>(x => x.Navigation, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Unread, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.Unread.$invalid && !NotificationForm.Unread.$pristine }">
+                        @(Html.Editor<Notification, bool>(x => x.Unread, t))
+                        @(Html.Required<Notification, bool>(x => x.Unread, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NotificationTypeID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.NotificationTypeID.$invalid && !NotificationForm.NotificationTypeID.$pristine }">
+                        @(Html.Editor<Notification, int>(x => x.NotificationTypeID, t))
+                        @(Html.Required<Notification, int>(x => x.NotificationTypeID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NotificationVersionID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.NotificationVersionID.$invalid && !NotificationForm.NotificationVersionID.$pristine }">
+                        @(Html.Editor<Notification, string>(x => x.NotificationVersionID, t))
+                        @(Html.Required<Notification, string>(x => x.NotificationVersionID, t))
+                        @(Html.StringLength<Notification, string>(x => x.NotificationVersionID, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.DateAdded.$invalid && !NotificationForm.DateAdded.$pristine }">
+                        @(Html.Editor<Notification, DateTime>(x => x.DateAdded, t))
+                        @(Html.Required<Notification, DateTime>(x => x.DateAdded, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10" ng-class="{ 'has-error' : NotificationForm.Active.$invalid && !NotificationForm.Active.$pristine }">
+                        @(Html.Editor<Notification, bool>(x => x.Active, t))
+                        @(Html.Required<Notification, bool>(x => x.Active, t))
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+                <ul>
+                    <li ng-repeat="(key, errors) in NotificationForm.$error track by $index">
+                        <strong>{{ key }}</strong> errors
+                        <ul>
+                            <li ng-repeat="e in errors">{{ e.$name }} has an error: <strong>{{ key }}</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
